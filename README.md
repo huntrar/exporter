@@ -1,6 +1,13 @@
 # Clubhouse Data Exporter
 
-This shell script will export all of your Clubhouse organization data to JSON files, which you can use to transfer your data to another system, to keep locally as a backup, or for data analysis.
+This script will export all of your Clubhouse organization data to JSON files, which you can use to transfer your data to another system, to keep locally as a backup, or for data analysis.
+
+### Installation
+
+Install dependencies with `pip`
+```sh
+pip install -r requirements.txt --user
+```
 
 ### Instructions
 
