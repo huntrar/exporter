@@ -1,2 +1,0 @@
-lint:
-	shellcheck exporter.sh
