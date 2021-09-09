@@ -5,11 +5,11 @@ import os
 
 import appdirs
 
-class ClubhouseExporter:
+class ShortcutExporter:
     def __init__(self):
-        self.BASE_URL = 'https://api.clubhouse.io/api/v2'
-        self.TOKEN = os.environ.get('CLUBHOUSE_API_TOKEN')
-        self.DATA_DIR = appdirs.user_data_dir('clubhouse')
+        self.BASE_URL = 'https://api.app.shortcut.com/api/v2'
+        self.TOKEN = os.environ.get('SHORTCUT_API_TOKEN')
+        self.DATA_DIR = appdirs.user_data_dir('shortcut')
         os.makedirs(self.DATA_DIR, exist_ok=True)
         self.DEBUG = False
 
@@ -52,5 +52,5 @@ class ClubhouseExporter:
 
 
 if __name__ == '__main__':
-    exporter = ClubhouseExporter()
+    exporter = ShortcutExporter()
     exporter.export()
